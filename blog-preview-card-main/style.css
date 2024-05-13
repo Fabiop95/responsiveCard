@@ -1,0 +1,230 @@
+/* Stili comuni */
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+body {
+  background-color: rgba(252, 209, 53, 0.911);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.second-div {
+  width: 23%;
+  height: 68%;
+  position: absolute;
+  margin: 11rem 0rem 0rem 0rem;
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 3px 2px #000000;
+  box-shadow: 20px 20px 3px 2px #000000;
+}
+
+.forth-div {
+  margin-left: 9px;
+}
+
+.third-div {
+  display: flex;
+  justify-content: center;
+  height: 18em;
+  margin: 15px 0px 22px 0px;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.learning {
+  background-color: rgba(252, 209, 53, 0.911);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 30%;
+  margin: 2em 0em 1.5em 0.9em;
+  border-radius: 4px;
+
+  p {
+    font-family: "Figtree";
+    font-weight: bolder;
+  }
+}
+
+.paragraph-date {
+  display: flex;
+  align-items: center;
+  margin: 9px 0px 0px 16px;
+
+  span {
+    font-family: "Figtree";
+  }
+}
+
+.paragraph-title {
+  display: flex;
+  margin: 25px 0px 0px 16px;
+  flex-direction: column;
+
+  span {
+    font-weight: bolder;
+    font-family: "Figtree";
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(235, 198, 66);
+    transition: 0.2s color ease-in-out;
+    margin-top: 6px;
+  }
+  span:hover {
+    color: rgb(212, 169, 13);
+  }
+}
+
+.paragraph-description {
+  p {
+    font-family: "Figtree";
+    font-size: 1em;
+    color: rgb(157, 157, 157);
+    flex-wrap: wrap;
+    width: 95%;
+  }
+}
+
+.paragraph-me {
+  display: flex;
+  align-items: center;
+  margin-top: 5em;
+
+  span {
+    color: black;
+    margin-left: 18px;
+    font-size: 18px;
+  }
+
+  img {
+    width: 15%;
+  }
+}
+
+/* Media queries */
+@media screen and (max-device-width: 500px) {
+  body {
+    background-color: rgba(252, 209, 53, 0.911);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .second-div {
+    width: 90%;
+    height: 60%;
+    margin: 13rem 2rem 0rem 0rem;
+  }
+
+  .third-div {
+    height: 36%;
+  }
+
+  .paragraph-me {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-device-width: 390px) {
+  body {
+    background-color: rgba(252, 209, 53, 0.911);
+  }
+
+  .second-div {
+    width: 90%;
+    height: 73%;
+    margin: 6rem 2rem 0rem 0rem;
+  }
+
+  .third-div {
+    height: 32%;
+  }
+
+  .paragraph-me {
+    margin-top: 3em;
+  }
+}
+
+/* for iPad/iPod */
+@media screen and (device-width: 810px) and (device-height: 1080px) {
+  body {
+    background-color: rgba(252, 209, 53, 0.911);
+  }
+
+  .second-div {
+    width: 53%;
+    height: 60%;
+    margin: 13rem 2rem 0rem 0rem;
+  }
+
+  .third-div {
+    height: 35%;
+  }
+
+  .paragraph-me {
+    margin-top: 5em;
+  }
+}
+
+/* for iPhone SE 2nd generation */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  body {
+    background-color: rgba(252, 209, 53, 0.911);
+  }
+
+  .second-div {
+    width: 90%;
+    height: 75%;
+    margin: 6rem 2rem 0rem 0rem;
+  }
+
+  .third-div {
+    height: 36%;
+  }
+
+  .paragraph-title {
+    display: flex;
+    margin: 10px 0px 0px 16px;
+    flex-direction: column;
+  }
+
+  .paragraph-me {
+    margin-top: 0.2em;
+  }
+}
+
+/* for Kindle */
+@media only screen and (device-width: 800px) and (device-height: 1280px) {
+  body {
+    background-color: rgba(252, 209, 53, 0.911);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .second-div {
+    width: 60%;
+    height: 55%;
+    margin: 18rem 2rem 0rem 0rem;
+  }
+
+  .third-div {
+    height: 36%;
+  }
+
+  .paragraph-me {
+    margin-top: 6em;
+  }
+}
